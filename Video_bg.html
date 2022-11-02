@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Choose your own title</title>
+		<link rel="stylesheet" href="Style.css">
+	</head>		
+	<body>
+	<section class="showcase">
+    <header>
+     <div class="navbar">
+		<img src="logo.png" class="logo"><!-- ***** Choose your own logo ***** -->
+	 </div>
+      <div class="toggle"></div>
+    </header>
+    <video src="Video.mp4" muted loop autoplay></video><!-- ***** Choose your own video ***** -->
+    <div class="overlay"></div>
+    <div class="text">
+      <div class="Hd"><center><b>Write your &nbsp; own Headline</b></center></div><br><br>
+      <p align="justify"><b><i>**Write your own content.<br><br></b></i>
+				</p><br>
+    <center><b><a class="bttn" href="#">Enter</b></center></a>
+    <!-- ***** "#" link to another HTML page.(Suppose, Your HTML page name is "ABC".
+        Example :- ABC.html) ***** -->
+	</div>
+  </section>
+  <div class="menu"><!-- ***** Customize your own menu bar ***** -->
+    <ul>
+      <li><a href="#"><i class="fa fa-home" style="font-size:50px;"></i></li><br><br>
+      <li><a href="#"><i class="fa fa-user-circle" style="font-size:50px;"></i></li><br><br>
+      <li><a href="#"><i class="fa fa-user" style="font-size:50px;"></i></a></li><br><br>
+      <li><a href="#"><i class="fa fa-comments" style="font-size:50px;"></i></a></li><br><br>
+      <!-- ***** "#" link to another HTML page.(Suppose, Your HTML page name is "ABC".
+        Example :- ABC.html) ***** -->
+    </ul>
+  </div>
+  <script>
+  const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+	  </script>
+	</body>
+</html>	
